@@ -93,7 +93,7 @@ def genWinWatcher():
             if E_CHANGE_DIRNAME & event:
                 event2watch = event2watch | win32con.FILE_NOTIFY_CHANGE_DIR_NAME
             if E_WRITE & event:
-                event2watch = event2watch | win32con.FILE_NOTIFY_CHANGE_LAST_WRITE
+                event2watch = event2watch | win32con.FILE_NOTIFY_CHANGE_SIZE
 
             self.event2watch = event2watch
 
